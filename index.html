@@ -1,0 +1,56 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow | Stay Organized</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <header>
+            <p class="eyebrow">YOUR PERSONAL WORKSPACE</p>
+            <h1>TaskFlow<span>.</span></h1>
+            <p class="subtitle">Small steps. Big progress.</p>
+        </header>
+
+        <section class="task-card">
+            <form id="task-form">
+                <input
+                    type="text"
+                    id="task-input"
+                    placeholder="What needs to be done?"
+                    maxlength="120"
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit">Add task</button>
+            </form>
+
+            <div class="task-summary">
+                <span id="task-count">0 tasks remaining</span>
+                <button id="clear-completed" class="text-button">
+                    Clear completed
+                </button>
+            </div>
+
+            <nav class="filters" aria-label="Filter tasks">
+                <button class="filter active" data-filter="all">All</button>
+                <button class="filter" data-filter="active">Active</button>
+                <button class="filter" data-filter="completed">Completed</button>
+            </nav>
+
+            <ul id="task-list" aria-live="polite"></ul>
+            <p id="empty-message" class="empty-message">
+                No tasks yet. Add one to get started!
+            </p>
+        </section>
+
+        <footer>Made with HTML, CSS & JavaScript.</footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
