@@ -1,0 +1,61 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | TaskFlow</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <main class="login-container">
+        <a href="index.html" class="brand">TaskFlow<span>.</span></a>
+
+        <div class="login-card">
+            <div class="icon">✓</div>
+
+            <h1>Welcome back</h1>
+            <p class="subtitle">Log in to continue organizing your day.</p>
+
+            <form id="login-form">
+                <label for="email">Email address</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="you@example.com"
+                    autocomplete="username"
+                    required
+                >
+
+                <label for="password">Password</label>
+                <div class="password-wrapper">
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                        minlength="8"
+                    >
+                    <button type="button" id="toggle-password">
+                        Show
+                    </button>
+                </div>
+
+                <button type="submit" class="login-button">Log in</button>
+
+                <p id="message" role="status"></p>
+            </form>
+
+            <p class="back-link">
+                <a href="index.html">← Back to TaskFlow</a>
+            </p>
+        </div>
+
+        <p class="footer">Stay focused. Keep moving forward.</p>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>
+```
